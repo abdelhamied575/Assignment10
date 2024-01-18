@@ -24,6 +24,7 @@ let nextDay=document.querySelectorAll('.nextDay')
 let maxTemp=document.querySelectorAll('.maxTemp')
 let lowTemp=document.querySelectorAll('.lowTemp')
 let nextImg=document.querySelectorAll('.nextImg')
+let statusNext=document.querySelectorAll('.statusNext');
 
 let dataOfWeather;
 
@@ -69,7 +70,7 @@ function forLoops(){
             console.log(x)
 
             nextDay[i].innerHTML=days[x.getDay()]
-        }
+    }
 
 
     for(let i=1;i<dataOfNextTwoDays.length;i++){
@@ -82,6 +83,10 @@ function forLoops(){
 
     for(let i=1;i<dataOfNextTwoDays.length;i++){
         lowTemp[i-1].innerHTML=`<span>${dataOfNextTwoDays[i].day.mintemp_c}<sup>o</sup>C</span>`
+    }
+
+    for(let i=0;i<statusNext.length;i++){
+        statusNext[i].innerHTML=dataOfNextTwoDays[i+1].day.condition.text
     }
 }
 
