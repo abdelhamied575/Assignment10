@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Application System</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg p-5">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><h3>Weather App</h3></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item px-3">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                      </li>
+                      <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+
+        <section id="home">
+            <div class="col-md-6 mx-auto py-5">
+                <form class="d-flex" role="search">
+                    <input id="search" class="form-control p-3 rounded-5 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="card h-100">
+                            <div class="card-header d-flex justify-content-around">
+                                <h5 id="currentDay"></h5>
+                                <h5>
+                                    <span id="currentDayNumber"></span>
+                                    <span id="currentMonth"></span>
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <h3 id="currentCity">Cairo</h3>
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <h1 id="currentTemp"><span></span></h1>
+                                    <img id="imgTemp" src="" class="img-thumbnail" alt="">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h6 id="currentState">Sunny</h6>
+    
+                                <div id="footerIcons" class="footer-icon">
+                                    <i id="icon-1" class="fa-solid fa-umbrella fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-header">
+                                <h4 class="nextDay" id="nextDay-1"></h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="img">
+                                    <img class="nextImg" id="imgNextDay-1" src="" alt="">
+                                </div>
+                                <h3 class="maxTemp" id="maxTepOne"></h3>
+                                <h6 class="lowTemp" id="lowTepOne"></h6>
+                                <h6 class="statusNext" id="statusOne"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-header">
+                                <h4 class="nextDay" id="nextDay-2"></h4>
+                            </div>
+                            <div class="card-body">
+                                <img class="nextImg" id="imgNextDay-2" src="" alt="">
+                                <h3 class="maxTemp" id="maxTepTwo"></h3>
+                                <h6 class="lowTemp" id="lowTepTwo"></h6>
+                                <h6 class="statusNext" id="statusTwo"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 py-5">
+                        <form class="d-flex" role="search">
+                            <input class="form-control p-3 rounded-5 me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="footer col-md-4 py-5">
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>

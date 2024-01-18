@@ -1,0 +1,42 @@
+#home{
+    background-image: url(../image/pexels-johannes-plenio-1118873.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    display: none;
+}
+
+section,footer,.nav-bar{
+    display: none;
+}
+
+
+
+footer, nav ,a{
+    background-color: rgb(213, 171, 71);
+    color: white !important;
+    
+}
+
+.card{
+    background: #dfed42;
+}
+
+.footer ul li{
+    padding: 20px;
+}
+
+.footer ul li a{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #05a;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer ul li a:hover{
+    background-color: #05a;
+    color: black !important;
+}
+
