@@ -31,7 +31,7 @@ let dataOfWeather;
 let dataOfNextTwoDays;
 
 search.addEventListener('keyup',function(e){
-    getWeather(e.target.value);
+    getWeather(e.target.value).then(displayData);
 })
 
 async function getWeather(searchKey){
