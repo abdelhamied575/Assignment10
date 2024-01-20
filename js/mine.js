@@ -19,7 +19,7 @@ let date=new Date();
 const days=['Sunday','Monday','Tuesday','Wendnesday','Thursday','Friday','Saturday'];
 const months=['January','February','March','Aprill','May','June','July','August','Setember','October','November','December']
 let search=document.getElementById('search')
-let searchKey='';
+
 let nextDay=document.querySelectorAll('.nextDay')
 let maxTemp=document.querySelectorAll('.maxTemp')
 let lowTemp=document.querySelectorAll('.lowTemp')
@@ -30,8 +30,18 @@ let dataOfWeather;
 
 let dataOfNextTwoDays;
 
+/* search.addEventListener('keyup',(e)=>
+    getWeather(e.target.value).then(displayData)) */
+    
+
+
 search.addEventListener('keyup',function(e){
-    getWeather(e.target.value).then(displayData);
+    getWeather(e.target.value).then(displayData)
+    if(e.target.value==""||e.target.value==null||e.target.value==undefined){
+        getWeather('cairo').then(displayData)
+
+    }
+
 })
 
 async function getWeather(searchKey){

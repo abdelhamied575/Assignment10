@@ -20,7 +20,11 @@ footer, nav ,a{
 }
 
 .card{
-    background: #dfed42;
+    background-image: url(../image/photo-1504608524841-42fe6f032b4b.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(25, 142, 146);
 }
 
 .footer ul li{
